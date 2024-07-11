@@ -28,7 +28,7 @@
         <table>
           <tr>
             <th style="padding: 10;">Language</th>
-            <th style="padding: 10;">Designed By</th>
+            <th>Designed By</th>
             <th style="padding: 10;">First Appeared</th>
         </tr>
         <tr>
@@ -67,64 +67,60 @@
             <h1>Article 2 - Coming soon...</h1>
     <br>
 
-<div class="first-form">
+    <div class="first-form">
         <h1>Contact Us!</h1>
         <form action="#" method="post">
             <h2>General Information</h2>
             First Name: <input type="text" name="first-name" id="first-name"> <br>
             Last Name: <input type="text" name="last-name" id="last-name"> <br>
             Email: <input type="email" name="email" id="email" required> <br>
-            Date Of Birth: <input type="date" name="date" id="date">  <br>
+            Date Of Birth: <input type="date" name="date" id="date"> <br>
         </form>
-</div>
+    </div>
     <br>
-<div class="second-form">
-    <h2>Essential Questions</h2>
-    <span>What kind of work do you need?</span> <br>
+    <div class="second-form">
+        <h2>Essential Questions</h2>
+        <span>What kind of work do you need?</span> <br>
         <div>
             <label for="programming">Programming: </label>
-            <input type="checkbox" id="programming" name="programming">
-          </div>
-
-        <div>
-            <label for="Design">Design: </label>
-            <input type="checkbox" name="Design" id="Design">
+            <input type="checkbox" id="programming" name="work[]">
         </div>
-
         <div>
-            <label for="Singing">Singing: </label>
-            <input type="checkbox" name="Singing" id="Singing">
+            <label for="design">Design: </label>
+            <input type="checkbox" id="design" name="work[]">
         </div>
-
         <div>
-            <label for="Comedy">Comedy: </label>
-            <input type="checkbox" name="Comedy" id="Comedy">
+            <label for="singing">Singing: </label>
+            <input type="checkbox" id="singing" name="work[]">
+        </div>
+        <div>
+            <label for="comedy">Comedy: </label>
+            <input type="checkbox" id="comedy" name="work[]">
         </div>
         <br>
         <span>How interested are you in our design skills?</span>
-
         <div>
-            <label for=" very-low"> Very Low: </label>
-            <input type="radio" name="interest" value="very-low">
+            <label for="very-low">Very Low: </label>
+            <input type="radio" id="very-low" name="interest" value="very-low">
         </div>
         <div>
-            <label for="Low"> Low: </label>
-            <input type="radio" name="interest" value="low">
+            <label for="low">Low: </label>
+            <input type="radio" id="low" name="interest" value="low">
         </div>
         <div>
-            <label for="Medium"> Medium: </label>
-            <input type="radio" name="interest" value="Medium">
+            <label for="medium">Medium: </label>
+            <input type="radio" id="medium" name="interest" value="medium">
         </div>
         <div>
-            <label for="High"> High: </label>
-            <input type="radio" name="interest" value="High">
+            <label for="high">High: </label>
+            <input type="radio" id="high" name="interest" value="high">
         </div>
         <div>
-            <label for=" very-high"> Very High: </label>
-            <input type="radio" name="interest" value="very-high">
-        </div>
+            <label for="very-high">Very High: </label>
+            <input type="radio" id="very-high" name="interest" value="very-high">
+        </div>    
         <div>
-            <button value="submit">Submit Me!</button>
+            <input type="submit" name="submit" id="sbmit" value="Submit Me!">
         </div>
 </div>
     <footer>Here is our footer - let's make sure we copyright &copy; this!</footer>
